@@ -3,7 +3,7 @@ name: client-test
 on:
   pull_request:
     branches:
-      - main
+      - develop
     paths:
       - "**"
 
