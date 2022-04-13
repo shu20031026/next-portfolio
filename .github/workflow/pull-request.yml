@@ -1,11 +1,6 @@
 name: client-test
 
-on:
-  pull_request:
-    branches:
-      - "**"
-    paths:
-      - "**"
+on: pull_request
 
 jobs:
   typecheck:
