@@ -1,11 +1,15 @@
 name: client-test
 
+<<<<<<< HEAD
 on:
   pull_request:
     branches:
       - "**"
     paths:
       - "**"
+=======
+on: pull_request
+>>>>>>> 7b5ac469c4e2f44bcdd7067fa401982032209bd0
 
 jobs:
   typecheck:
