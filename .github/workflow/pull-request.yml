@@ -30,5 +30,8 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
+      - name: build test
+          run: yarn build
+          
       - name: Typecheck 👀
         run: yarn workspace client typecheck
