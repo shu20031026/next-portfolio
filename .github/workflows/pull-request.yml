@@ -2,10 +2,6 @@ name: client-test
 
 on:
   pull_request:
-    branches:
-      - develop
-    paths:
-      - "**"
   workflow_dispatch:
 
 jobs:
@@ -30,5 +26,8 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
+      - name: build test
+        run: yarn build
+
       - name: Typecheck 👀
-        run: yarn workspace client typecheck
+        run: yarn typecheck
