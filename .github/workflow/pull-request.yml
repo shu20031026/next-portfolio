@@ -3,7 +3,7 @@ name: client-test
 on:
   pull_request:
     branches:
-      - main
+      - "**"
     paths:
       - "**"
 
@@ -29,5 +29,8 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
-      - name: Typecheck 👀
+      - name: Type check 👀
         run: yarn typecheck
+
+      - name: Build check
+        run: yarn build
