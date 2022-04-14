@@ -27,7 +27,7 @@ jobs:
         run: yarn
 
       - name: build test
-          run: yarn build
+        run: yarn build
 
       - name: Typecheck 👀
         run: yarn workspace client typecheck
