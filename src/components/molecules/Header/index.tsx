@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import { headerContainer, headerWrapper } from "./style";
+import { headerContainer, headerContents, headerWrapper, nameContents } from "./style";
 
 const pageList = [
   {
-    title: "hoge",
-    link: "/"
+    title: "works",
+    link: "/works"
   },
   {
     title: "huga",
@@ -18,6 +18,10 @@ const pageList = [
   {
     title: "aiueo",
     link: "/"
+  },
+  {
+    title: "aaaaaa",
+    link:"/"
   }
 ];
 
@@ -26,10 +30,11 @@ const Header = () => {
     <>
       <div css={headerContainer}>
         <div css={headerWrapper}>
+          <div css={nameContents}>Shu Nakashima</div>
           {
             pageList.map((item) => {
               return(
-                <div key={item.link}>
+                <div key={item.link} css={headerContents}>
                   <Link href={item.link}>{item.title}</Link>
                 </div>
               );

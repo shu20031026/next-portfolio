@@ -5,7 +5,7 @@ export const palette = {
     dark: ""
   },
   secondary: {
-    main: "#130e00",
+    main: "#3d3d3d",
     light: "",
     dark: ""
   },
@@ -16,8 +16,8 @@ export const palette = {
   },
   text:{
     dark: {
-      default: "#f0f8ff",
-      hover: ""
+      default: "#e3e3e3",
+      hover: "#ffffff"
     },
     light: {
       default: "",

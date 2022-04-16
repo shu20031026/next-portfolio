@@ -3,7 +3,7 @@ import WorksPage from "~/components/domain/Works";
 
 const Works = () => {
   return(
-    <>  
+    <>
       <WorksPage />
     </>
   );
