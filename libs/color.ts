@@ -4,6 +4,24 @@ export const palette = {
     light: "",
     dark: ""
   },
-  secondary: "",
-  tertiary: ""
+  secondary: {
+    main: "#130e00",
+    light: "",
+    dark: ""
+  },
+  tertiary: {
+    main: "",
+    light: "",
+    dark: ""
+  },
+  text:{
+    dark: {
+      default: "#f0f8ff",
+      hover: ""
+    },
+    light: {
+      default: "",
+      hover: ""
+    },
+  }
 };
