@@ -1,27 +1,28 @@
 import Link from "next/link";
 import React from "react";
-import { headerContainer, headerContents, headerWrapper, nameContents } from "./style";
+import { Drawer } from "../Drawer";
+import { drawerWrapper, headerContainer, headerContents, headerWrapper, nameContents } from "./style";
 
 const pageList = [
   {
     title: "works",
-    link: "/works"
+    link: "/works",
   },
   {
     title: "huga",
-    link: "/"
+    link: "/",
   },
   {
     title: "piyo",
-    link: "/"
+    link: "/",
   },
   {
     title: "aiueo",
-    link: "/"
+    link: "/",
   },
   {
     title: "aaaaaa",
-    link:"/"
+    link: "/",
   }
 ];
 
@@ -29,17 +30,18 @@ const Header = () => {
   return (
     <>
       <div css={headerContainer}>
+        <div css={drawerWrapper}>
+          <Drawer linkItems={pageList}/>
+        </div>
         <div css={headerWrapper}>
           <div css={nameContents}>Shu Nakashima</div>
-          {
-            pageList.map((item) => {
-              return(
-                <div key={item.link} css={headerContents}>
-                  <Link href={item.link}>{item.title}</Link>
-                </div>
-              );
-            })
-          }
+          {pageList.map((item) => {
+            return (
+              <div key={item.link} css={headerContents}>
+                <Link href={item.link}>{item.title}</Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

@@ -16,6 +16,9 @@ export const headerWrapper = css`
   color: ${palette.text.dark.default};
   display: flex;
   justify-content: space-around;
+  @media (min-width: ${breakpoints.pc}px){
+    width: 90%;
+  }
 `;
 
 export const nameContents = css`
@@ -31,4 +34,11 @@ export const headerContents = css`
   &:hover{
     color: ${palette.text.dark.hover};
   };
+`;
+
+export const drawerWrapper = css`
+  @media (min-width: ${breakpoints.pc}px){
+    display: none;
+    width: 10%;
+  }
 `;
