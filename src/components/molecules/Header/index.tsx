@@ -10,19 +10,19 @@ const pageList = [
   },
   {
     title: "huga",
-    link: "/",
+    link: "/a",
   },
   {
     title: "piyo",
-    link: "/",
+    link: "/b",
   },
   {
     title: "aiueo",
-    link: "/",
+    link: "/c",
   },
   {
     title: "aaaaaa",
-    link: "/",
+    link: "/d",
   }
 ];
 

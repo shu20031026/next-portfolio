@@ -12,22 +12,6 @@ export const drawerButton = css`
   align-items: center;
 `;
 
-// export const drawerSpan1 = css`
-//   position: absolute;
-//   background-color: ${palette.text.dark.default};
-//   width: 50%;
-//   height: 1px;
-//   margin-bottom: 10px;
-// `;
-
-// export const drawerSpan2 = css`
-//   position: absolute;
-//   background-color: ${palette.text.dark.default};
-//   width: 50%;
-//   height: 1px;
-//   margin-top: 5px;
-// `;
-
 export const drawerSpan1 = css`
   position: absolute;
   background-color: ${palette.text.dark.default};
@@ -42,4 +26,20 @@ export const drawerSpan2 = css`
   width: 50%;
   height: 1px;
   margin-top: 5px;
+`;
+
+export const isOpenDrawerSpan1 = css`
+  position: absolute;
+  background-color: ${palette.text.dark.default};
+  transform: rotate(45deg);
+  width: 50%;
+  height: 1px;
+`;
+
+export const isOpenDrawerSpan2 = css`
+  position: absolute;
+  background-color: ${palette.text.dark.default};
+  transform: rotate(-45deg);
+  width: 50%;
+  height: 1px;
 `;
