@@ -1,29 +1,9 @@
-import React, { FC, useState } from "react";
-import { drawerButton, drawerSpan1, drawerSpan2, isOpenDrawerSpan1, isOpenDrawerSpan2 } from "./style";
+import React from "react";
 
-type LinkItem = {
-  title: string;
-  link: string;
-};
-
-type Props = {
-  linkItems: LinkItem[];
-};
-
-export const Drawer: FC<Props> = ({ linkItems }) => {
-  const [drawerIsOpen,setDrawerIsOpen] = useState(false);
-  console.log(linkItems[0].link);
-  console.log(drawerIsOpen);
-
-  const drawerOpen = () => {
-    setDrawerIsOpen(!drawerIsOpen);
-  };
-  return (
-    <div css={drawerButton} onClick={() => {
-      drawerOpen();
-    }}>
-      <span css={drawerIsOpen ? isOpenDrawerSpan1 : drawerSpan1}/>
-      <span css={drawerIsOpen ? isOpenDrawerSpan2 : drawerSpan2}/>
+export const Drawer = () => {
+  return(
+    <div>
+      
     </div>
   );
 };
