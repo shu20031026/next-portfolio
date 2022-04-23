@@ -14,10 +14,13 @@ export const Drawer: FC<Props> = ({ linkItems }) => {
   const [drawerIsOpen,setDrawerIsOpen] = useState(false);
   console.log(linkItems[0].link);
   console.log(drawerIsOpen);
+
+  const drawerOpen = () => {
+    setDrawerIsOpen(!drawerIsOpen);
+  };
   return (
     <div css={drawerButton} onClick={() => {
-      setDrawerIsOpen(!drawerIsOpen);
-      // console.log(drawerIsOpen);
+      drawerOpen();
     }}>
       <span css={drawerIsOpen ? isOpenDrawerSpan1 : drawerSpan1}/>
       <span css={drawerIsOpen ? isOpenDrawerSpan2 : drawerSpan2}/>
