@@ -1,37 +1,19 @@
 import Link from "next/link";
-import React from "react";
+import React, { FC } from "react";
 import { HamburgerButton } from "../Hamburger";
 import { drawerWrapper, headerContainer, headerContents, headerWrapper, nameContents } from "./style";
+import { PageType } from "/types/page";
 
-const pageList = [
-  {
-    title: "works",
-    link: "/works",
-  },
-  {
-    title: "huga",
-    link: "/a",
-  },
-  {
-    title: "piyo",
-    link: "/b",
-  },
-  {
-    title: "aiueo",
-    link: "/c",
-  },
-  {
-    title: "aaaaaa",
-    link: "/d",
-  }
-];
+type Props = {
+  pageList:PageType[]
+};
 
-const Header = () => {
+const Header:FC<Props> = ({pageList}) => {
   return (
     <>
       <div css={headerContainer}>
         <div css={drawerWrapper}>
-          <HamburgerButton linkItems={pageList}/>
+          <HamburgerButton/>
         </div>
         <div css={headerWrapper}>
           <div css={nameContents}>Shu Nakashima</div>

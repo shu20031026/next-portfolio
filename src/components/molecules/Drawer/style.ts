@@ -9,6 +9,9 @@ export const drawerContainer = css`
   height: 94.5vh;
   position: absolute;
   z-index: ${rootZIndex.zIndexModal};
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 export const closeDrawerContainer = css`
   display: none;
