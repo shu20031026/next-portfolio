@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { DrawerButton } from "../DrawerButton";
+import { HamburgerButton } from "../Hamburger";
 import { drawerWrapper, headerContainer, headerContents, headerWrapper, nameContents } from "./style";
 
 const pageList = [
@@ -31,7 +31,7 @@ const Header = () => {
     <>
       <div css={headerContainer}>
         <div css={drawerWrapper}>
-          <DrawerButton linkItems={pageList}/>
+          <HamburgerButton linkItems={pageList}/>
         </div>
         <div css={headerWrapper}>
           <div css={nameContents}>Shu Nakashima</div>

@@ -5,9 +5,8 @@ export const palette = {
     dark: ""
   },
   secondary: {
-    main: "#3d3d3d",
-    light: "",
-    dark: ""
+    main: "#000000",
+    light: "#a5a5a5"
   },
   tertiary: {
     main: "",

@@ -1,4 +1,4 @@
 export const rootZIndex = {
-  zIndexHeader: 1,
+  zIndexMain: 1,
   zIndexModal: 2
 };

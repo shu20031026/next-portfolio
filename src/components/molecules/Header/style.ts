@@ -4,7 +4,7 @@ import { breakpoints } from "/libs/screenSize";
 
 export const headerContainer = css`
   width: 100%;
-  height: 44px;
+  height: 5.5vh;
   background-color: ${palette.secondary.main};
   display: flex;
   justify-content: center;

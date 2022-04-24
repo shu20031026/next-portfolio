@@ -12,7 +12,7 @@ type Props = {
   linkItems: LinkItem[];
 };
 
-export const DrawerButton: FC<Props> = ({ linkItems }) => {
+export const HamburgerButton: FC<Props> = ({ linkItems }) => {
   const [drawerButtonOpen,setDrawerButtonOpen] = useState(false);
   const [drawerIsOpen,setDrawerIsOpen] = useRecoilState(drawerState);
 
