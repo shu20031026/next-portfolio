@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { closeDrawerContainer, drawerContainer } from "./style";
+import { closeDrawerContainer, drawerContainer, drawerContent } from "./style";
 import { useRecoilValue } from "recoil";
 import { drawerState } from "~/globalStates/atoms";
 import { PageType } from "/types/page";
@@ -16,8 +16,10 @@ export const DrawerMenu:FC<Props> = ({pageList}) => {
     <div css={drawerIsOpen ? drawerContainer : closeDrawerContainer}>
       {pageList.map((item) => {
         return (
-          <div key={item.link}>
+          <div key={item.link} css={drawerContent}>
+            <div>
             <Link href={item.link}>{item.title}</Link>
+            </div>
           </div>
         );
       })}
