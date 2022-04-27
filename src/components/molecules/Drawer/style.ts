@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 import { palette } from "/libs/color";
+import { breakpoints } from "/libs/screenSize";
 import { rootZIndex } from "/libs/zIndex";
 
 export const drawerContainer = css`
@@ -13,6 +14,10 @@ export const drawerContainer = css`
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
+  @media (min-width: ${breakpoints.pc}px){
+    display: none;
+    width: 10%;
+  }
 `;
 
 export const closeDrawerContainer = css`
