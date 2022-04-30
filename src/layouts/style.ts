@@ -10,5 +10,5 @@ export const mainContent = css`
 export const bodyContainer = css`
   display: flex;
   flex-flow: column;
-  min-height: 100vh;
+  min-height: 94.5vh;
 `;
