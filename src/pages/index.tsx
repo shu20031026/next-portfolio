@@ -1,15 +1,11 @@
 import React from "react";
 import type { NextPage } from "next";
-import { css } from "@emotion/react";
-
-const name = css`
-  color: red;
-`;
+import HomePage from "~/components/domain/Home";
 
 const Home: NextPage = () => {
   return (
     <>
-      <div css={name}>shu20031026</div>
+      <HomePage />
     </>
   );
 };
