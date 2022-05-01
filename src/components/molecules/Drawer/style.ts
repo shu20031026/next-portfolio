@@ -14,6 +14,7 @@ export const drawerContainer = css`
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
+  opacity:0.9;
   @media (min-width: ${breakpoints.pc}px){
     display: none;
     width: 10%;
