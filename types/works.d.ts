@@ -1,11 +1,11 @@
-export type Works = {
-  contents: Work[];
+export type WorksType = {
+  contents: WorkType[];
   totalCount: number;
   offset: number;
   limit: number;
 }
 
-export type Work = {
+export type WorkType = {
   id: string;
   createdAt: string;
   updatedAt: string;
@@ -18,12 +18,12 @@ export type Work = {
     height: number;
     width: number;
   },
-  tech: Tech[];
+  tech: TechType[];
   github: string;
   link: string;
 }
 
-export type Tech = {
+export type TechType = {
   id: string;
   createdAt: string;
   updatedAt: string;
@@ -33,8 +33,8 @@ export type Tech = {
   category:string[];
 }
 
-export type Techs = {
-  contents: Tech[];
+export type TechsType = {
+  contents: TechType[];
   totalCount: number;
   offset: number;
   limit: number;

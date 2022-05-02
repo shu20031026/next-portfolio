@@ -1,12 +1,14 @@
 import React from "react";
-import { works } from "./style";
+import { WorksType } from "/types/works";
 
-const WorksPage = () => {
+type Props = {
+  works: WorksType;
+};
+
+const WorksPage: React.VFC<Props> = ({ works }) => {
   return (
     <>
-      <div css={works}>
-        works
-      </div>
+      <div>{JSON.stringify(works)}</div>
     </>
   );
 };
