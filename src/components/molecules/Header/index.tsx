@@ -16,7 +16,9 @@ const Header:FC<Props> = ({pageList}) => {
           <HamburgerButton/>
         </div>
         <div css={headerWrapper}>
+          <Link href="/">
           <div css={nameContents}>Shu Nakashima</div>
+          </Link>
           {pageList.map((item) => {
             return (
               <div key={item.link} css={headerContents}>
