@@ -11,4 +11,10 @@ export const bodyContainer = css`
   display: flex;
   flex-flow: column;
   min-height: 94.5vh;
+  width: 100%;
+`;
+
+export const container = css`
+  width: 100vw;
+  height: 100vh;
 `;
