@@ -6,19 +6,19 @@ import { PageType } from "/types/page";
 import Link from "next/link";
 
 type Props = {
-  pageList:PageType[]
+  pageList: PageType[];
 };
 
-export const DrawerMenu:React.VFC<Props> = ({pageList}) => {
-  const drawerIsOpen = useRecoilValue(drawerState);  
+export const DrawerMenu: React.VFC<Props> = ({ pageList }) => {
+  const drawerIsOpen = useRecoilValue(drawerState);
 
-  return(
+  return (
     <div css={drawerIsOpen ? drawerContainer : closeDrawerContainer}>
       {pageList.map((item) => {
         return (
           <div key={item.link} css={drawerContent}>
             <div>
-            <Link href={item.link}>{item.title}</Link>
+              <Link href={item.link}>{item.title}</Link>
             </div>
           </div>
         );
