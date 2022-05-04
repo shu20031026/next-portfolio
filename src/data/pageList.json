@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Profile",
+    "link": "/profile"
+  },
+  {
+    "title": "Works",
+    "link": "/works"
+  },
+  {
+    "title": "Specialty field",
+    "link": "/specialty"
+  },
+  {
+    "title": "Blog",
+    "link": "/blog"
+  },
+  {
+    "title": "Contact",
+    "link": "/contact"
+  }
+]

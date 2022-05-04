@@ -1,2 +1,1 @@
-# Next Portfolio
-## Next.jsを用いたポートフォリオです。
+# Next.js Portfolio

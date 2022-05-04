@@ -1,10 +1,10 @@
-import React from 'react';
-import { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document';
-import { CssBaseline } from '@nextui-org/react';
-import { NextPage } from 'next';
+import React from "react";
+import { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from "next/document";
+import { CssBaseline } from "@nextui-org/react";
+import { NextPage } from "next";
 
 const MyDocument: NextPage = () => {
-  return(
+  return (
     <Html>
       <Head>{CssBaseline.flush()}</Head>
       <body>
@@ -15,12 +15,12 @@ const MyDocument: NextPage = () => {
   );
 };
 
-MyDocument.getInitialProps = async (ctx:DocumentContext): Promise<DocumentInitialProps> => {
+MyDocument.getInitialProps = async (ctx: DocumentContext): Promise<DocumentInitialProps> => {
   const initialProps = await ctx.defaultGetInitialProps(ctx);
-    return {
-      ...initialProps,
-      styles: <React.Fragment>{initialProps.styles}</React.Fragment>
-    };
+  return {
+    ...initialProps,
+    styles: <React.Fragment>{initialProps.styles}</React.Fragment>,
+  };
 };
 
 export default MyDocument;
