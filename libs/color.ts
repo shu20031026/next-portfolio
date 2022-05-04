@@ -2,25 +2,25 @@ export const palette = {
   primary: {
     main: "",
     light: "",
-    dark: ""
+    dark: "",
   },
   secondary: {
     main: "#000000",
-    light: "#a5a5a5"
+    light: "#a5a5a5",
   },
   tertiary: {
     main: "",
     light: "",
-    dark: ""
+    dark: "",
   },
-  text:{
+  text: {
     dark: {
       default: "#e3e3e3",
-      hover: "#ffffff"
+      hover: "#ffffff",
     },
     light: {
       default: "",
-      hover: ""
+      hover: "",
     },
-  }
+  },
 };

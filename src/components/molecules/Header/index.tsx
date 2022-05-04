@@ -1,22 +1,30 @@
 import Link from "next/link";
-import React, { FC } from "react";
+import React from "react";
 import { HamburgerButton } from "../Hamburger";
-import { drawerWrapper, headerContainer, headerContents, headerWrapper, nameContents } from "./style";
+import {
+  drawerWrapper,
+  headerContainer,
+  headerContents,
+  headerWrapper,
+  nameContents,
+} from "./style";
 import { PageType } from "/types/page";
 
 type Props = {
-  pageList:PageType[]
+  pageList: PageType[];
 };
 
-const Header:FC<Props> = ({pageList}) => {
+const Header: React.VFC<Props> = ({ pageList }) => {
   return (
     <>
       <div css={headerContainer}>
         <div css={drawerWrapper}>
-          <HamburgerButton/>
+          <HamburgerButton />
         </div>
         <div css={headerWrapper}>
-          <div css={nameContents}>Shu Nakashima</div>
+          <Link href="/">
+            <div css={nameContents}>Shu Nakashima</div>
+          </Link>
           {pageList.map((item) => {
             return (
               <div key={item.link} css={headerContents}>
