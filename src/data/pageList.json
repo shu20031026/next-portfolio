@@ -1,22 +1,22 @@
 [
   {
-    "title": "works",
+    "title": "Profile",
+    "link": "/profile"
+  },
+  {
+    "title": "Works",
     "link": "/works"
   },
   {
-    "title": "blog",
+    "title": "Specialty field",
+    "link": "/specialty"
+  },
+  {
+    "title": "Blog",
     "link": "/blog"
   },
   {
-    "title": "piyo",
-    "link": "/"
-  },
-  {
-    "title": "aiueo",
-    "link": "/"
-  },
-  {
-    "title": "aaaaaa",
-    "link": "/"
+    "title": "Contact",
+    "link": "/contact"
   }
 ]
