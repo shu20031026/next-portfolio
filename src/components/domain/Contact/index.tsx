@@ -3,9 +3,7 @@ import React from "react";
 const ContactPage: React.VFC = () => {
   return (
     <>
-      <div>
-        contact
-      </div>
+      <div>contact</div>
     </>
   );
 };
