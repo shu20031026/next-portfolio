@@ -1,6 +1,6 @@
 import React from "react";
 import { closeDrawerContainer, drawerContainer, drawerContent } from "./style";
-import { useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { drawerState } from "~/globalStates/atoms";
 import { PageType } from "/types/page";
 import Link from "next/link";
@@ -10,14 +10,18 @@ type Props = {
 };
 
 export const DrawerMenu: React.VFC<Props> = ({ pageList }) => {
-  const drawerIsOpen = useRecoilValue(drawerState);
+  const [drawerIsOpen, setDrawerIsOpen] = useRecoilState(drawerState);
+
+  const handleCloseMenu = () => {
+    setDrawerIsOpen(false);
+  };
 
   return (
     <div css={drawerIsOpen ? drawerContainer : closeDrawerContainer}>
       {pageList.map((item) => {
         return (
           <div key={item.link} css={drawerContent}>
-            <div>
+            <div onClick={() => handleCloseMenu()}>
               <Link href={item.link}>{item.title}</Link>
             </div>
           </div>

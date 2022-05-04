@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { DrawerMenu } from "~/components/molecules/Drawer";
 import Header from "~/components/molecules/Header";
-import { bodyContainer, mainContent } from "./style";
+import { bodyContainer, container, mainContent } from "./style";
 import PageList from "~/data/pageList.json";
 import Footer from "~/components/molecules/Footer";
 
@@ -11,7 +11,7 @@ type LayoutProps = Required<{
 
 export const Layout: React.VFC<LayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div css={container}>
       <Header pageList={PageList}></Header>
       <div css={bodyContainer}>
         <DrawerMenu pageList={PageList} />

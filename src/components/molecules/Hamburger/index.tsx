@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useRecoilState } from "recoil";
 import { drawerState } from "~/globalStates/atoms";
 import {
@@ -10,23 +10,17 @@ import {
 } from "./style";
 
 export const HamburgerButton: React.VFC = () => {
-  const [drawerButtonOpen, setDrawerButtonOpen] = useState(false);
   const [drawerIsOpen, setDrawerIsOpen] = useRecoilState(drawerState);
-
-  const drawerOpen = () => {
-    setDrawerButtonOpen(!drawerButtonOpen);
-    setDrawerIsOpen(!drawerIsOpen);
-  };
 
   return (
     <div
       css={drawerButtonContainer}
       onClick={() => {
-        drawerOpen();
+        setDrawerIsOpen(!drawerIsOpen);
       }}
     >
-      <span css={drawerButtonOpen ? isOpenDrawerSpan1 : drawerSpan1} />
-      <span css={drawerButtonOpen ? isOpenDrawerSpan2 : drawerSpan2} />
+      <span css={drawerIsOpen ? isOpenDrawerSpan1 : drawerSpan1} />
+      <span css={drawerIsOpen ? isOpenDrawerSpan2 : drawerSpan2} />
     </div>
   );
 };
