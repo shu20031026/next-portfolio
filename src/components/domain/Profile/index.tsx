@@ -3,9 +3,7 @@ import React from "react";
 const ProfilePage: React.VFC = () => {
   return (
     <>
-      <div>
-        profile
-      </div>
+      <div>profile</div>
     </>
   );
 };
