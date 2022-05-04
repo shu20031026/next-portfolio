@@ -12,7 +12,6 @@ export const drawerButtonContainer = css`
   align-items: center;
 `;
 
-
 export const drawerOpenMove1 = keyframes`
   100%{
     transform: rotate(45deg);

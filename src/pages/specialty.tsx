@@ -5,7 +5,7 @@ import SpecialtyPage from "~/components/domain/Specialty";
 const Specialty: NextPage = () => {
   return (
     <>
-      <SpecialtyPage/>
+      <SpecialtyPage />
     </>
   );
 };
