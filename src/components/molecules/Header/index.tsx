@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { FC } from "react";
+import React from "react";
 import { HamburgerButton } from "../Hamburger";
 import { drawerWrapper, headerContainer, headerContents, headerWrapper, nameContents } from "./style";
 import { PageType } from "/types/page";
@@ -8,7 +8,7 @@ type Props = {
   pageList:PageType[]
 };
 
-const Header:FC<Props> = ({pageList}) => {
+const Header:React.VFC<Props> = ({pageList}) => {
   return (
     <>
       <div css={headerContainer}>

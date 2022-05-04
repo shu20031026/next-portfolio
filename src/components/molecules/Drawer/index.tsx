@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { closeDrawerContainer, drawerContainer, drawerContent } from "./style";
 import { useRecoilValue } from "recoil";
 import { drawerState } from "~/globalStates/atoms";
@@ -9,7 +9,7 @@ type Props = {
   pageList:PageType[]
 };
 
-export const DrawerMenu:FC<Props> = ({pageList}) => {
+export const DrawerMenu:React.VFC<Props> = ({pageList}) => {
   const drawerIsOpen = useRecoilValue(drawerState);  
 
   return(

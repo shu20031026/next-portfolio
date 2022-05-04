@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import { drawerState } from "~/globalStates/atoms";
 import { drawerButtonContainer, drawerSpan1, drawerSpan2, isOpenDrawerSpan1, isOpenDrawerSpan2 } from "./style";
 
-export const HamburgerButton = () => {
+export const HamburgerButton: React.VFC = () => {
   const [drawerButtonOpen,setDrawerButtonOpen] = useState(false);
   const [drawerIsOpen,setDrawerIsOpen] = useRecoilState(drawerState);
 

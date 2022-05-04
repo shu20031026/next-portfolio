@@ -1,7 +1,7 @@
 import React from "react";
 import { home } from "./style";
 
-const HomePage = () => {
+const HomePage: React.VFC = () => {
   return (
     <>
       <div css={home}>

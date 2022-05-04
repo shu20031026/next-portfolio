@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React from "react";
 import { footerContainer } from "./style";
 
-const Footer:FC = () => {
+const Footer: React.VFC = () => {
   return(
     <div css={footerContainer}>
       <div>© {new Date().getFullYear()} Shu Nakashima.</div>
