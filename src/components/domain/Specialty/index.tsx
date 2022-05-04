@@ -1,11 +1,9 @@
 import React from "react";
 
-const SpecialtyPage:React.VFC = () => {
+const SpecialtyPage: React.VFC = () => {
   return (
     <>
-      <div>
-        specialty
-      </div>
+      <div>specialty</div>
     </>
   );
 };
