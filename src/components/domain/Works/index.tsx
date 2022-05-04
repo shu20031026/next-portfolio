@@ -8,7 +8,11 @@ type Props = {
 const WorksPage: React.VFC<Props> = ({ works }) => {
   return (
     <>
-      <div>{JSON.stringify(works)}</div>
+      <div>
+        {works.contents.map((work) => {
+          return <div key={work.id}>{work.title}</div>;
+        })}
+      </div>
     </>
   );
 };
