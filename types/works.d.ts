@@ -3,7 +3,7 @@ export type WorksType = {
   totalCount: number;
   offset: number;
   limit: number;
-}
+};
 
 export type WorkType = {
   id: string;
@@ -13,15 +13,15 @@ export type WorkType = {
   revisedAt: string;
   title: string;
   content: string;
-  image:{
+  image: {
     url: string;
     height: number;
     width: number;
-  },
+  };
   tech: TechType[];
   github: string;
   link: string;
-}
+};
 
 export type TechType = {
   id: string;
@@ -30,12 +30,12 @@ export type TechType = {
   publishedAt: string;
   revisedAt: string;
   name: string;
-  category:string[];
-}
+  category: string[];
+};
 
 export type TechsType = {
   contents: TechType[];
   totalCount: number;
   offset: number;
   limit: number;
-}
+};
