@@ -14,8 +14,8 @@ export const drawerContainer = css`
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
-  opacity:0.9;
-  @media (min-width: ${breakpoints.pc}px){
+  opacity: 0.9;
+  @media (min-width: ${breakpoints.pc}px) {
     display: none;
     width: 10%;
   }
@@ -33,7 +33,7 @@ export const drawerContent = css`
   align-items: center;
   flex-direction: column;
   border-bottom: 0.5px solid ${palette.secondary.light};
-  &:hover{
+  &:hover {
     color: ${palette.text.dark.hover};
-  };
+  }
 `;
