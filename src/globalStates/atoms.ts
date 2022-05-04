@@ -1,6 +1,6 @@
-import {atom} from "recoil";
+import { atom } from "recoil";
 
 export const drawerState = atom<boolean>({
   key: "drawer",
-  default: false
+  default: false,
 });
