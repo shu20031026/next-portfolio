@@ -4,7 +4,7 @@ const ProfilePage = () => {
   return (
     <>
       <div>
-        home 
+        profile
       </div>
     </>
   );
