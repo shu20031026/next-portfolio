@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 import { useRecoilState } from "recoil";
 import { drawerState } from "~/globalStates/atoms";
 import {
