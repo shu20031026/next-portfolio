@@ -5,7 +5,7 @@ import BlogPage from "~/components/domain/Brog";
 const Blog: NextPage = () => {
   return (
     <>
-      <BlogPage/>
+      <BlogPage />
     </>
   );
 };
