@@ -9,13 +9,15 @@ type Props = {
 const WorksPage: React.VFC<Props> = ({ works }) => {
   return (
     <>
-      <div>{works.map((work)=>{
-        return(
-          <Link key={work.id} href={`works/${work.id}`}>
-            <div>{work.title}</div>
-          </Link>
-        );
-      })}</div>
+      <div>
+        {works.map((work) => {
+          return (
+            <Link key={work.id} href={`works/${work.id}`}>
+              <div>{work.title}</div>
+            </Link>
+          );
+        })}
+      </div>
     </>
   );
 };
