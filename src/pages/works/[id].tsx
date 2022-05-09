@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType, NextPage } from "next";
 import React from "react";
+import { fetchWorksData } from "~/apis/microCMS/works";
 import { WorksDetail } from "~/components/domain/Works/Detail";
-import { client } from "/libs/cmsClient";
 import { WorkType } from "/types/works";
 
 type ParamsProps = {
@@ -11,12 +11,11 @@ type ParamsProps = {
 };
 
 type Props = {
-  workDetail: WorkType
-}
+  workDetail: WorkType;
+};
 
 export const getStaticPaths = async () => {
-  const res = await client.get({ endpoint: "works" });
-  const works: WorkType[] = await res.contents;
+  const works = await fetchWorksData();
 
   const paths = works.map((work) => ({
     params: {
@@ -29,8 +28,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }: ParamsProps) => {
   const id = params.id;
-  const res = await client.get({ endpoint: "works" });
-  const works: WorkType[] = await res.contents;
+  const works = await fetchWorksData();
   const workDetail = works.find((work) => work.id === id);
 
   return {
@@ -38,8 +36,9 @@ export const getStaticProps = async ({ params }: ParamsProps) => {
   };
 };
 
-const WorksDetailPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({workDetail}:Props) => {
-
+const WorksDetailPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  workDetail,
+}: Props) => {
   return (
     <>
       <WorksDetail work={workDetail} />
