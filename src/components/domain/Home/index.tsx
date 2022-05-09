@@ -6,9 +6,7 @@ const HomePage: React.VFC = () => {
   return (
     <>
       <div css={home}>
-        <div css={backgroundWhite}>
-            hoge
-        </div>
+        <div css={backgroundWhite}>hoge</div>
       </div>
     </>
   );
