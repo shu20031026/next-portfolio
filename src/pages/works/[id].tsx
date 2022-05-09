@@ -11,8 +11,8 @@ type ParamsProps = {
 };
 
 type Props = {
-  workDetail: WorkType
-}
+  workDetail: WorkType;
+};
 
 export const getStaticPaths = async () => {
   const works = await fetchWorksData();
@@ -36,8 +36,9 @@ export const getStaticProps = async ({ params }: ParamsProps) => {
   };
 };
 
-const WorksDetailPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({workDetail}:Props) => {
-
+const WorksDetailPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  workDetail,
+}: Props) => {
   return (
     <>
       <WorksDetail work={workDetail} />
