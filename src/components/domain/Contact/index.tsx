@@ -1,9 +1,13 @@
 import React from "react";
+import { contact } from "./style";
+import { backgroundWhite } from "/libs/backgroundStyle";
 
 const ContactPage: React.VFC = () => {
   return (
     <>
-      <div>contact</div>
+      <div css={contact}>
+        <div css={backgroundWhite}>contact</div>
+      </div>
     </>
   );
 };
