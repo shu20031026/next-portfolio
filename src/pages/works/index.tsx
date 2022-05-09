@@ -1,18 +1,18 @@
 import { InferGetStaticPropsType, NextPage } from "next";
 import React from "react";
+import { fetchWorksData } from "~/apis/microCMS/works";
 import WorksPage from "~/components/domain/Works";
-import { client } from "/libs/cmsClient";
-import { WorksType } from "/types/works";
+import { WorkType } from "/types/works";
 
 export const getStaticProps = async () => {
-  const works = await client.get({ endpoint: "works" });
+  const works = await fetchWorksData();
   return {
     props: { works },
   };
 };
 
 type Props = {
-  works: WorksType;
+  works: WorkType[];
 };
 
 const Works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ works }: Props) => {

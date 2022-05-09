@@ -1,0 +1,27 @@
+{
+  "name": {
+    "firstName":{
+      "kanji": "柊",
+      "kana": "しゅう",
+      "english": "Shu"
+    },
+    "lastName":{
+      "kanji": "中嶋",
+      "kana": "なかしま",
+      "english": "Nakashima"
+    },
+    "nickName":"hiiragi"
+  },
+  "studentNumber": 4423,
+  "specializedField": "コンピュータ研究部 Web班",
+  "sns":{
+    "twitter": {
+      "id":"@hiiragi61848684",
+      "name":"Hiiragi.tsx"
+    },
+    "github": {
+      "id":"shu20031026",
+      "name": "shu20031026"
+    }
+  }
+}

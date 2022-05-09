@@ -1,11 +1,11 @@
 import React from "react";
 import { InferGetStaticPropsType, NextPage } from "next";
 import SpecialtyPage from "~/components/domain/Specialty";
-import { client } from "/libs/cmsClient";
 import { TechsType } from "/types/works";
+import { fetchTechData } from "~/apis/microCMS/techs";
 
 export const getStaticProps = async () => {
-  const techs = await client.get({ endpoint: "tech" });
+  const techs = await fetchTechData();
   return {
     props: { techs },
   };
