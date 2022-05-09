@@ -2,10 +2,10 @@ import React from "react";
 import { WorkType } from "/types/works";
 
 type Props = {
-  work: WorkType
-}
+  work: WorkType;
+};
 
-export const WorksDetail: React.VFC<Props> = ({work}) => {
+export const WorksDetail: React.VFC<Props> = ({ work }) => {
   return (
     <>
       <div>{work.title}</div>
@@ -18,4 +18,3 @@ export const WorksDetail: React.VFC<Props> = ({work}) => {
     </>
   );
 };
-
