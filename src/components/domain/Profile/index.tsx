@@ -1,9 +1,13 @@
 import React from "react";
+import { profile } from "./style";
+import { backgroundWhite } from "/libs/backgroundStyle";
 
 const ProfilePage: React.VFC = () => {
   return (
     <>
-      <div>profile</div>
+      <div css={profile}>
+        <div css={backgroundWhite}>profile</div>
+      </div>
     </>
   );
 };
