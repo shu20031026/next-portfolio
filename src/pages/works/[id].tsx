@@ -15,8 +15,7 @@ type Props = {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetchWorksData();
-  const works: WorkType[] = await res.contents;
+  const works = await fetchWorksData();
 
   const paths = works.map((work) => ({
     params: {
@@ -29,8 +28,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }: ParamsProps) => {
   const id = params.id;
-  const res = await fetchWorksData();
-  const works: WorkType[] = await res.contents;
+  const works = await fetchWorksData();
   const workDetail = works.find((work) => work.id === id);
 
   return {

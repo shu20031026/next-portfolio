@@ -2,7 +2,7 @@ import { InferGetStaticPropsType, NextPage } from "next";
 import React from "react";
 import { fetchWorksData } from "~/apis/microCMS/works";
 import WorksPage from "~/components/domain/Works";
-import { WorksType } from "/types/works";
+import { WorkType } from "/types/works";
 
 export const getStaticProps = async () => {
   const works = await fetchWorksData();
@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
 };
 
 type Props = {
-  works: WorksType;
+  works: WorkType[];
 };
 
 const Works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({ works }: Props) => {

@@ -1,7 +1,8 @@
 import { client } from "/libs/cmsClient";
-import { WorksType } from "/types/works";
+import { WorkType } from "/types/works";
 
-export const fetchWorksData = async ():Promise<WorksType> => {
+export const fetchWorksData = async ():Promise<WorkType[]> => {
   const fetchData = await client.get({endpoint: "works"});
-  return fetchData;
+  const works = await fetchData.contents;
+  return works;
 };
