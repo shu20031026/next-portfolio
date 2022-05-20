@@ -1,4 +1,4 @@
 # Next Portfolio
 
-## Next.jsとmicroCMSを使ったポートフォリオサイト
+## Next.jsとmicroCMSを使ったポートフォリオ
 
