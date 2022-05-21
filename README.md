@@ -1,4 +1,4 @@
-# Next Portfolio
+# NextPortfolio
 
 ## Next.jsとmicroCMSを使ったポートフォリオ
 
